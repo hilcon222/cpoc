@@ -1,2 +1,3 @@
-dist/cpoc-0.1.tar.gz
-dist/cpoc-0.1-py2.py3-none-any.whl
+*.tar.gz
+*.whl
+dist/*
