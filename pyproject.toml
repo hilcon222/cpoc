@@ -11,3 +11,6 @@ dynamic = ["version", "description"]
 
 [project.urls]
 Home = "https://github.com/hilcon222/cpoc"
+
+[project.scripts]
+cpoc = "cpoc.__main__:main"
