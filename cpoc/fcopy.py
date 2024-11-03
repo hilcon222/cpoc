@@ -13,7 +13,7 @@ class YourMindHasAnError(Exception):
 def fc(file1, file2):
     abs1 = abspath(file1)
     abs2 = abspath(file2)
-    if not all(prompt("Do you really want to copy that file? "), prompt("Do you realize that if you copy that file you won't get any money? "), prompt("Do you realize that if you copy that file your PC will find out?")): # noqa
+    if not all((prompt("Do you really want to copy that file? "), prompt("Do you realize that if you copy that file you won't get any money? "), prompt("Do you realize that if you copy that file your PC will find out?"))): # noqa
         raise YourMindHasAnError("ok, not gonna copy")
     if exists(abs2) and not prompt("Do you wanna overwrite? "):
         raise YourMindHasAnError("not gonna overwrite then")
